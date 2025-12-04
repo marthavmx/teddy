@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martha Claire | Innovate. Code. Transform.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body background="mart.jpg">
+
+<!-- Navbar -->
+<header>
+  <div class="logo">MARTHA CLAIRE</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" background="WhatsApp Image 2025-11-17 at 13.01.15_cfc41032.jpg">
+  <div class="hero-content">
+    <h1 class="pt">Martha Claire</h1>
+    <img src="mart.jpg" alt="me" height="300px">
+    <p class="pt">Problem. Code. Transform.</p>
+    <div class="btns">
+      
+      <a href="#services" class="btn">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="fade">
+  <h2>About </h2>
+  <p>Iam a software and it expert who is available to empower the next generation of developers and software while delivering modern solutions for businesses.</p>
+  <p>My vision is to build Softwares to solve problems not fun.</p>
+  <img src="bt.png" height="500px">
+</section>
+
+<!-- Services Section -->
+<section id="services" class="fade">
+  <h2>Services</h2>
+  <div class="cards">
+    <div class="card">Web Development</div>
+    <div class="card">Database Manaagement</div>
+    <div class="card">Business Systems</div>
+    <div class="card">IT Consultancy</div><br>
+   
+  </div>
+   <img src="tec.png" width="700px">
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="fade">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project"><img src="sa.png" width="150px" height="150px"><br>SACCO Management System</div>
+    <div class="project"><img src="Screenshot 2025-11-17 201250.png" width="150px" height="150px"> <br>Hospital Management System</div>
+    <div class="project"><img src="sc.png" width="150px" height="150px"> <br>School Portal</div>
+  
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="fade">
+  <h2>Contacts</h2>
+  <form action="https://formsubmit.co/marthaclairenangendo900@gmail.com" method="POST">
+    <label for="name">Your Name</label>
+    <input id="name" type="text" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" placeholder="Email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Message" required class="t"></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+  <p>Email: marthaclairenangendo900@gmail.com | WhatsApp: +256 708281506</p>
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); 
+    fetch(this.action, {
+      method: this.method,
+      body: new FormData(this)
+    }).then(() => {
+      window.location.reload(); 
+    });
+  });
+</script>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 MART. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
